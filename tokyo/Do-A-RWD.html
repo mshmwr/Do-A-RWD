@@ -1,0 +1,341 @@
+<html>
+  <head>
+    <!-- 外部引用 -->
+    <!-- 引用jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- 引用外部css -->
+    <link rel="stylesheet" type="text/css" href="../css/Do-A-RWD.css" />
+    <!-- 引用外部js -->
+    <script type="text/javascript" src="../js/Do-A-RWD.js"></script>
+    <script type="text/javascript" src="../js/slick/slick.min.js"></script>
+
+    <!-- 在針對要實作 RWD 的網頁中，HTML 的 head 部分必須設定 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 使用slick -->
+    <link rel="stylesheet" href="../js/slick/slick-theme.css">
+    <link rel="stylesheet" href="../js/slick/slick.css">
+
+
+    <!-- 使用remodal
+      <link rel="stylesheet" href="node_modules/remodal/dist/remodal.css">
+      <link rel="stylesheet" href="node_modules/remodal/dist/remodal-default-theme.css">
+      <script src="node_modules/remodal/dist/remodal.min.js"></script>
+    -->
+
+    <!-- 內部使用js -->
+    <!-- <script language="javascript">
+    alert('測試文字');
+    alert('測試文字第一行<br>測試文字第二行');
+    alert('測試文字第一行\n測試文字第二行');
+  </script> -->
+  </head>
+
+  <body>
+    <header id="top-head">navigation</header>
+    <section id="header">
+      <div class="bg-yellow padd-top-md padd-bottom-sm">
+        <div class="text-center container">
+          <div class="newsWeare padd-bottom-md">
+            <img src="../assets/img/img-weareopen.png">
+          </div>
+          <div class="row">
+            <div class="col-sm-6 padd-bottom-sm">
+              <div class="newsArea js-matchHeigtht" style>
+                <p class="storeBadge">CAFE</p>
+                <p class="yoyakuBadge padd-top-xxs">
+                  予約制／お食事／一部グッズ
+                </p>
+                <p class="newsOpenCafe padd-top-xxs">カービィカフェ</p>
+                <p class="newsOpenSta">
+                  東京スカイツリータウン・ソラマチ
+                  4F
+                </p>
+                <div class="padd-top-xxs padd-bottom-xs">
+                  <a data-remodal-target="caution-modal" class="btn-common">カフェを予約する</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6  padd-bottom-sm">
+              <div class="newsArea js-matchHeigtht" style>
+                <p class="storeBadge">STORE</p>
+                <p class="yoyakuBadge padd-top-xxs">フリー入場制／グッズのみ</p>
+                <p class="newsOpenCafe padd-top-xxs">
+                  カービィカフェ <span>ザ・ストア</span>
+                </p>
+                <p class="newsOpenSta">
+                  期間限定開催中<br>
+                  ※カフェのご予約がなくてもお買い物をしていただけます。
+                </p>
+                <p class="newsOpenSta padd-bottom-xs">
+                  東京スカイツリータウン・ソラマチ 2F
+                </p>
+                <!--
+              							<div class="padd-bottom-xs">
+              								<p class="waiting">※12月9日～11日の3日間は改装のためお休みをいただきます。</p>
+              								<p class="sp-info"><span class="text-bold">「カービィカフェ TOKYO」<br>カウントダウンフェア開催中！</span>
+              									10月7日より、「カービィカフェ TOKYO」カウントダウンフェアを開催中！
+              								</p>
+              							</div>
+              							-->
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padd-top-sm padd-bottom-lg">
+        <div class="text-center container">
+          <div class="padd-bottom-sm">
+            <h3 class="sectiontitle">
+              <img src="../assets/img/icon-tomato.png" class="icon icon-tomato">NEWS
+            </h3>
+          </div>
+          <div class="newsTxtBox">
+            <li>
+              <span class="newsDate">20.09.03</span><a data-remodal-target="news-popup">期間限定 カービィカフェ オンラインストア「カービィカフェ
+                ポップアップ ストア」終了日時のお知らせ</a>
+            </li>
+      
+            <li>
+              <span class="newsDate">20.07.01</span>SPECIAL・MENU・GOODSに「カービィカフェSummer
+              2020」の情報を更新致しました
+            </li>
+            <li>
+              <span class="newsDate">20.06.26</span><a href="https://kirbycafe-popup.com/" target="_blank">期間限定 カービィカフェ
+                オンラインストア 「カービィカフェ
+                ポップアップ ストア」オープン</a>
+            </li>
+            <li>
+              <span class="newsDate">20.06.24</span><a data-remodal-target="summer-modal">「カービィカフェ Summer2020」開催のお知らせ</a>
+            </li>
+            <li>
+              <span class="newsDate">20.06.18</span>6月19日よりテイクアウトフェア開催！
+            </li>
+            <li>
+              <span class="newsDate">20.05.22</span><a data-remodal-target="covid-modal5">営業再開のお知らせ</a>
+            </li>
+            <li>
+              <span class="newsDate">20.03.10</span><a data-remodal-target="covid-modal">コロナウイルスによる感染拡大の予防に関しまして</a>
+            </li>
+          </div>
+          <p class="twitter-info padd-top-sm">
+            最新情報はtwitterを参照ください
+          </p>
+          <div class="twitter-link">
+            <a href="https://twitter.com/KirbyCafeJP" target="_blank">
+              <i class="ion-social-twitter"></i>
+              <p>カービィカフェ 公式Twitter</p>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news">
+    </section>
+    <section class="bg-yellow" id="story">
+      <div class="text-center padd-top-md padd-bottom-lg">
+        <div class="padd-bottom-sm">
+          <h3 class="sectiontitle">
+            <img src="../assets/img/icon-peropero.png" class="icon icon-peropero">STORY
+          </h3>
+        </div>
+        <div class="container padd-top-sm">
+          <div class="movie-box padd-bottom-md">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gCs7KFEeHWk?rel=0&amp;showinfo=0"
+                frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <div class="col-md-12 padd-bottom-md">
+            <h4 class="storyTitle padd-bottom-xs">カービィカフェ、<span>グランドオープンのお話</span></h4>
+            <p class="storyTxt">
+              カービィカフェのとれたてでおいしい食材は、<br class="none">ワドルディたちが毎朝カフェまで<br class="none">せっせと運んでいます。<br>
+              <br>
+              そんなようすを見ていたカービィが、<br class="none">ある時ふとひらめきました。<br>
+              <br>
+              翌日の朝早く、カービィは、<br class="none">なんとカフェのテーブルやイス、キッチン用品から<br class="none">お店の看板までひとりでかつぎ上げ、<br
+                class="none">ウィスピーウッズの森に向かって<br class="none">歩きはじめたのです。<br>
+              <br>
+              びっくりしたのは<br class="none">開店準備にやってきた早番のワドルディ。<br>カービィカフェが、影もかたちもないのですから。<br>
+              <br>
+              さらにびっくりしたのは収穫にやってきたワドルディ。<br>ウィスピーウッズのまわりに、<br class="none">カフェの道具が山のように積みあげられています。<br>
+              <br>
+              と、そこへカービィがやってきました。<br>コックカワサキがすっぽり入った大きな鍋を<br class="none">にこにこ顔でかつぎあげています。<br>
+              <br>
+              そんなカービィの顔を見たとたんに<br class="none">みんなの表情がパッと明るくなりました。<br>
+              <br>
+              「……そうかっ！」<br>
+              「朝の収穫がとってもカンタン！」<br>
+              「カービィ、ナイスアイデアだね！！」<br>
+              <br>
+              こうして、ウィスピーウッズのまわりに<br class="none">ふたたびお店が完成しました。<br>
+              <br>
+              さあ、<br>
+              あたらしいカービィカフェのはじまりです！
+            </p>
+
+          </div>
+        </div>
+        <div>
+          <a data-remodal-target="movie" class="btn-common">これまでのお話をみる</a>
+        </div>
+        <!-- QAremodal-movie-->
+
+        <!-- QAremoal-movie -->
+      </div>
+
+    </section>
+    <section id="special">
+      <div class="text-center padd-top-md padd-bottom-lg">
+        <div class="padd-bottom-sm">
+          <h3 class="sectiontitle">
+            <img src="../assets/img/icon-momo.png" class="icon icon-momo">SPECIAL
+          </h3>
+        </div>
+        <div class="container" role="toolbar">
+          
+        </div>
+      </div>
+      
+    </section>
+    <section id="menu">menu</section>
+    <section id="goods">goods</section>
+    <section id="access">
+      
+      <div class="text-center padd-top-md padd-bottom-lg container">
+        <div class="padd-bottom-sm">
+          <h3 class="sectiontitle">
+            <img src="../assets/img/icon-cherry.png" class="icon icon-cherry">ACCESS
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 padd-bottom-lg">
+            <div class="accessBox">
+              <div class="padd-bottom-xs js-matchHeigtht" style="">
+                <p class="locationTitle">CAFE</p>
+                <div class="accessCafeShop">カービィカフェ</div>
+                <p class="accessTxt">
+                  東京都墨田区押上1-1-2<br>東京スカイツリータウン・ソラマチ<br>イーストヤード
+                  4F 9番地
+                </p>
+                <p class="accessDetail">
+                  開催日程：2019年12月12日(木)オープン<br>
+                  営業時間：10:00〜22:00（L.O.21:00）<br>
+                  電話番号：03-3622-5577
+                </p>
+                <div class="accessMap">
+                  <img src="../assets/img/img-map-cafe.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padd-bottom-lg">
+            <div class="accessBox">
+              <div class="padd-bottom-xs js-matchHeigtht" style>
+                <p class="locationTitle">STORE</p>
+                <div class="accessCafeShop">
+                  カービィカフェ <span>ザ・ストア</span>
+                </div>
+                <p class="accessTxt">
+                  東京都墨田区押上1-1-2<br>東京スカイツリータウン・ソラマチ<br>イーストヤード
+                  2F 9番地 特設会場
+                </p>
+                <p class="accessDetail">
+                  開催日程：2019年12月12日～<br>
+                  営業時間：10:00〜21:00<br>
+                  電話番号：080-4188-7141
+                </p>
+                <div class="accessMap">
+                  <img src="../assets/img/img-map-store.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <a href="https://goo.gl/maps/bWKAo65bPbS2" target="_brank" class="btn-common">Google Mapsでみる</a>
+        </div>
+      </div>
+
+    </section>
+    <footer id="footer">
+      <div class="container footerBox">
+        <div class="row">
+          <div class="contact col-md-4 padd-bottom-lg">
+            <p class="footerTitle">CONTACT US</p>
+            <p class="contactTitle">ベネリック株式会社</p>
+            <div class="">
+              <a href="http://benelic.com/contact/" target="_brank" class="btn-common">お問い合わせ</a>
+            </div>
+          </div>
+          <div class="follow col-md-5 padd-bottom-lg">
+            <p class="footerTitle">FOLLOW US</p>
+            <div class="twitter-link">
+              <a href="https://twitter.com/KirbyCafeJP" target="_blank">
+                <i class="ion-social-twitter"></i>
+                <p>カービィカフェ 公式Twitter</p>
+              </a>
+            </div>
+            <p class="footerTitle padd-top-md">AND MORE...</p>
+            <div class="portal-link">
+              <a href="https://www.kirby.jp/" target="_blank">
+                <img src="../assets/img/bnr-portal.jpg">
+              </a>
+            </div>
+            <div class="portal-link padd-top-xxs">
+              <a href="https://www.hallab.co.jp/products/kirbycafecd/" target="_blank">
+                <img src="../assets/img/bnr-cafecd.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="follow col-md-3 padd-bottom-md">
+            <p class="pagetopTitle">PAGE TOP</p>
+            <div id="ptCircle">
+              <div id="pageTop">
+                <img src="../assets/img/pagetop.png" id="ptopBtn">
+                <img src="../assets/img/pagetop2.png" id="ptopBtn2">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="footerImg">
+        <img src="../assets/img/footerImg-permanent.png">
+      </div>
+      <p class="text-center copy">
+        ©Nintendo / HAL Laboratory, Inc.<br>
+        ©BENELIC CO.,LTD.
+      </p>
+      </div>
+
+
+
+    </footer>
+
+      <!-- 使用remodal
+<div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="caution-modal" tabindex="-1">
+  <div class="remodal-box">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h4 class="text-bold">ご予約店舗のご確認</h4>
+    <p class="caution-modal-text">
+      ご予約店舗のお間違いにご注意ください。<br>
+      <br>
+      こちらは<br>
+      <span class="text-bold">「カービィカフェ TOKYO」</span>
+      のご予約フォームへ進みます。<br>
+      <br>
+      Next is Kirby Café TOKYO Reservation form.
+    </p>
+    <div class="padd-top-xs">
+      <a href="https://kirbycafe-reserve.com/guest/tokyo/" target="_blank" class="btn-common">予約フォームへ進む</a>
+    </div>
+    <div class="padd-top-xs">
+      <a data-remodal-action="close" class="">閉じる</a>
+    </div>
+  </div>
+</div> -->
+    </div>
+  </body>
+</html>

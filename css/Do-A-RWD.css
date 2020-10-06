@@ -1,0 +1,406 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+  /* background-color: #979687; */
+}
+
+footer {
+  background-color: #eeefeb;
+  font-size: 14px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+div {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+}
+/*kirbyCafe版面配置*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "FOT-スーラ Pro M", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro";
+  background-color: #ffe963;
+  color: #5ccccc; /*#5c4c45;*/
+  letter-spacing: 0.1em;
+}
+span {
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.movie-box {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.newsOpenSta {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.newsOpenCafe {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+.newsOpenCafe span {
+  display: block;
+  font-size: 0.8em;
+}
+.yoyakuBadge {
+  font-family: "FOT-スーラ Pro DB";
+  font-weight: bold;
+  font-size: 18px;
+}
+.storeBadge {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 24px;
+  display: inline-block;
+  background-color: #fce254;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.newsArea {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px 0;
+}
+.newsTxtBox {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  /* display: table; */
+  width: 88%;
+  margin: 0 auto;
+}
+.newsTxtBox li {
+  display: table;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.newsDate {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 12px;
+  padding-right: 15px;
+}
+.twitter-info {
+  font-weight: 700;
+}
+.twitter-link a {
+  display: inline-block;
+  background-color: #fff;
+  color: #00aced;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0;
+}
+.twitter-link a i {
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 1.8em;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #00aced;
+  padding: 15px;
+}
+.twitter-link a p {
+  display: inline;
+  padding: 0 15px;
+}
+.ion-social-twitter {
+  display: inline-block;
+  font-family: "Ionicons";
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ion-social-twitter:before {
+  content: "\f243";
+}
+.icon-cherry {
+  width: 55px;
+}
+.icon-momo {
+  width: 60px;
+}
+.icon-onigiri {
+  width: 63px;
+}
+.icon-tomato,
+.icon-peropero,
+.icon-stick {
+  width: 70px;
+}
+.icon {
+  margin-right: 10px;
+}
+
+.btn-common {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #5c4c45;
+  color: #fff !important;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.sectiontitle {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 30px;
+  font-weight: 700;
+  color: #5c4c45;
+}
+.storyTxt {
+  text-align: center;
+  line-height: 1.6em;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.accessBox {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 0 0;
+}
+.locationTitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 24px;
+  padding-top: 15px;
+}
+.accessCafeShop {
+  font-size: 12px;
+  padding: 5px 20px 4px;
+  background-color: #f5d03e;
+  color: #fff;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-top: 15px;
+  line-height: 18px;
+}
+.accessTxt {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 15px 0 10px;
+}
+.accessDetail {
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+}
+.accessMap {
+  padding: 20px 20px 0;
+}
+.newsWeare {
+  width: 753px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.footerTitle {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.padd-top-xxs {
+  padding-top: 16px;
+}
+.padd-top-sm {
+  padding-top: 35px;
+}
+.padd-top-md {
+  padding-top: 48px;
+}
+.padd-bottom-xs {
+  padding-bottom: 26px;
+}
+.padd-bottom-sm {
+  padding-bottom: 35px;
+}
+.padd-bottom-md {
+  padding-bottom: 48px;
+}
+.padd-bottom-lg {
+  padding-bottom: 68px;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* background-color: rgb(76, 12, 253); */
+}
+.bg-yellow {
+  background-color: #fce254;
+}
+footer {
+  background-color: #eeefeb;
+  font-size: 14px;
+}
+
+.col-md-3,
+.col-md-4,
+.col-md-5 {
+  /* position: relative; */
+  width: 80%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* RWD */
+/* media query: added behind general css settings: https://ithelp.ithome.com.tw/articles/10196578*/
+
+/*kirbyCafe版面配置*/
+@media (max-width: 767px) {
+  .padd-top-md {
+    padding-top: 32px;
+  }
+  .padd-bottom-sm {
+    padding-bottom: 20px;
+  }
+  .padd-bottom-xs {
+    padding-bottom: 16px;
+  }
+  .padd-bottom-md {
+    padding-bottom: 32px;
+  }
+  html,
+  body,
+  .text-right,
+  .text-left {
+    text-align: center;
+  }
+}
+
+/* 此處只列出參考範本中較常使用到的4,6,12，更詳細的css設定可去下載bootstrap檔案來使用 */
+@media (max-width: 768px) {
+  .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    min-height: 1px;
+    /* flex-basis: calc(-30px + 100% * 6 * 1 / 12); */
+    /* background-color: rgb(0, 255, 64); */
+  }
+  .padd-top-sm {
+    padding-top: 20px;
+  }
+  .padd-bottom-lg {
+    padding-bottom: 41px;
+  }
+  .padd-top-md {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    /*填滿剩餘空間*/
+    /* flex: 1; */
+
+    /*使用固定寬度*/
+    width: 38%;
+
+    min-height: 1px;
+    /* background-color: black; */
+  }
+}
+@media (max-width: 991px) {
+  .movie-box {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  .storyTxt {
+    padding: 0 20px;
+    text-align: left;
+  }
+}
+
+/*畫面效果相關css*/
